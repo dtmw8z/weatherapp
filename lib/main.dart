@@ -10,12 +10,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Weather App'),
-        ),
-        body: HomeScreen(),
-      ),
+      theme: ThemeData.dark(useMaterial3: true),
+      home: const HomeScreen(),
     );
   }
 }
